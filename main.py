@@ -22,6 +22,7 @@ if __name__ == '__main__':
     imp = importlib.import_module("Source.Console.Console", "Console")
 
     console = imp.Console(40, 40)
+    console.setFramePerSeconds(24)
 
     while console.isRunning():
         console.draw()

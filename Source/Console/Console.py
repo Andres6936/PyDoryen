@@ -21,3 +21,8 @@ class Console:
 
     def getKeyPressed(self) -> Key:
         return Key(self.__instance.getKeyPressed())
+
+    # Setters
+
+    def setFramePerSeconds(self, fps: int) -> None:
+        self.__instance.setFramePerSeconds(fps)
