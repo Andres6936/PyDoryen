@@ -61,50 +61,50 @@ class Key:
             return KeyCode.SPACE
 
         elif keyCode is Doryen.KeyCode.A:
-            pass
+            return KeyCode.A
         elif keyCode is Doryen.KeyCode.B:
-            pass
+            return KeyCode.B
         elif keyCode is Doryen.KeyCode.C:
-            pass
+            return KeyCode.C
         elif keyCode is Doryen.KeyCode.D:
-            pass
+            return KeyCode.D
         elif keyCode is Doryen.KeyCode.E:
-            pass
+            return KeyCode.E
         elif keyCode is Doryen.KeyCode.F:
-            pass
+            return KeyCode.F
         elif keyCode is Doryen.KeyCode.G:
-            pass
+            return KeyCode.G
         elif keyCode is Doryen.KeyCode.H:
-            pass
+            return KeyCode.H
         elif keyCode is Doryen.KeyCode.I:
-            pass
+            return KeyCode.I
         elif keyCode is Doryen.KeyCode.J:
-            pass
+            return KeyCode.J
         elif keyCode is Doryen.KeyCode.K:
-            pass
+            return KeyCode.K
         elif keyCode is Doryen.KeyCode.L:
-            pass
+            return KeyCode.L
         elif keyCode is Doryen.KeyCode.M:
-            pass
+            return KeyCode.M
         elif keyCode is Doryen.KeyCode.N:
-            pass
+            return KeyCode.N
         elif keyCode is Doryen.KeyCode.O:
-            pass
+            return KeyCode.O
         elif keyCode is Doryen.KeyCode.P:
-            pass
+            return KeyCode.P
         elif keyCode is Doryen.KeyCode.Q:
-            pass
+            return KeyCode.Q
         elif keyCode is Doryen.KeyCode.R:
-            pass
+            return KeyCode.R
         elif keyCode is Doryen.KeyCode.S:
-            pass
+            return KeyCode.S
         elif keyCode is Doryen.KeyCode.T:
-            pass
+            return KeyCode.T
         elif keyCode is Doryen.KeyCode.W:
-            pass
+            return KeyCode.W
         elif keyCode is Doryen.KeyCode.X:
-            pass
+            return KeyCode.X
         elif keyCode is Doryen.KeyCode.Y:
-            pass
+            return KeyCode.Y
         elif keyCode is Doryen.KeyCode.Z:
-            pass
+            return KeyCode.Z
