@@ -6,19 +6,28 @@ Doryen = cppyy.gbl.Doryen
 
 class Key:
 
-    def __init__(self, key : Doryen.Key = None) -> None:
+    def __init__(self, key: Doryen.Key = None) -> None:
         """
         Construct the object Key
         :param key: Object of type Doryen::Key, if is None the
             default value for keyCode is None
         """
         if key is None:
-            self.__keyCode : KeyCode = KeyCode.NONE
+            self.__keyCode: KeyCode = KeyCode.NONE
         else:
-            self.__keyCode : KeyCode = Key.__convertEvent(key)
+            # Convert the Doryen.KeyCode to KeyCode
+            self.__keyCode: KeyCode = Key.__convertEvent(key.getKeyCode())
+
+    def getKeyCode(self) -> KeyCode:
+        return self.__keyCode
 
     @staticmethod
-    def __convertEvent(keyCode : Doryen.KeyCode ) -> KeyCode:
+    def __convertEvent(keyCode: Doryen.KeyCode) -> KeyCode:
+        """
+        Convert the Doryen KeyCode to KeyCode
+        :param keyCode: Doryen KeyCode
+        :return: KeyCode
+        """
         if keyCode is Doryen.KeyCode.NONE:
             return KeyCode.NONE
         elif keyCode is Doryen.KeyCode.ESCAPE:

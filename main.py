@@ -1,6 +1,8 @@
 import cppyy
 import importlib
 
+from Source.Event.KeyCode import KeyCode
+
 
 def bootstrap():
     cppyy.add_include_path('.')
@@ -26,3 +28,6 @@ if __name__ == '__main__':
 
     while console.isRunning():
         console.draw()
+
+        key = console.getKeyPressed().getKeyCode()
+        print(key)
