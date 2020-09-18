@@ -5,8 +5,11 @@ from Source.Event.Key import Key
 Doryen = cppyy.gbl.Doryen
 
 class Console:
-    def __init__(self, width : int, height : int) -> None:
-        self.__instance : Doryen.Console = Doryen.Console(width, height)
+    def __init__(self, width: int, height: int) -> None:
+        self.__instance: Doryen.Console = Doryen.Console(width, height)
+
+    def draw(self) -> None:
+        self.__instance.draw()
 
     def clear(self) -> None:
         self.__instance.clear()
@@ -17,4 +20,4 @@ class Console:
     # Getters
 
     def getKeyPressed(self) -> Key:
-        pass
+        return Key(self.__instance.getKeyPressed())
