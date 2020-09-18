@@ -1,9 +1,6 @@
 import cppyy
 import importlib
 
-from Source.Event.KeyCode import KeyCode
-
-
 def bootstrap():
     cppyy.add_include_path('.')
     cppyy.include('Doryen/Doryen.hpp')
